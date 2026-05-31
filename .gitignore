@@ -139,3 +139,30 @@ experiments/weights/*
 experiments/save_demo/*
 experiments/tmp_save_demo/*
 ckp/
+
+# COMET / LNPDB generated data, logs, checkpoints, and caches
+*.lmdb
+*.pt
+*.pkl
+events.out.tfevents.*
+wandb/
+experiments/wandb/
+experiments/logs/
+experiments/infer_results/
+experiments/inference_inputs/
+experiments/in_house_lnp_library_infer_results_withclsrep_OS/
+experiments/save_lnpdb_heartkidney/
+experiments/tmp_save_lnpdb_heartkidney/
+experiments/processed_data_dirs/
+pipeline/sweeps/
+output/
+
+# Large/raw local datasets. Keep small curated examples/configs in git instead.
+experiments/data_raw/
+experiments/data_json/LNPDB.json
+
+# Local editor / agent metadata
+.vscode/
+.claude/
+.codex/
+.agents/

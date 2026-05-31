@@ -46,7 +46,7 @@ class SelfMultiheadAttention(nn.Module):
         assert embed_dim == self.embed_dim
 
         q, k, v = self.in_proj(query).chunk(3, dim=-1)
-        
+
         # print("bsz, self.num_heads: ", bsz, self.num_heads)
         # print("bsz * self.num_heads, -1, self.head_dim: ", bsz * self.num_heads, -1, self.head_dim)
         q = (

@@ -604,7 +604,7 @@ class NPFinetuneContrastiveLoss(UnicoreLoss):
                 pred_loss = self.compute_loss(model, task_net_output, sample, contrast_targets=contrast_targets, reduce=reduce, loss_sample_dropout=loss_sample_dropout, min_loss_sample=min_loss_sample, contrast_margin_coeff=contrast_margin_coeff)
             else:
                 # print("else min_loss_sample <= contrast_targets.shape[0]")
-                pred_loss = torch.tensor(0, device=contrast_targets.device) # use 0 as a placeholder for loss value and skip task if contrast_targets num is smaller than min_loss_sample to prevent training instability
+                pred_loss = task_net_output.sum() * 0.0 # differentiable no-op when a batch has too few samples for this task
 
             loss_dict[task_name] = pred_loss
 
@@ -816,5 +816,4 @@ class NPFinetuneContrastiveLoss(UnicoreLoss):
         to True will improves distributed training speed.
         """
         return is_train
-
 

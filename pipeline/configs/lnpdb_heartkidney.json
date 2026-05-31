@@ -1,0 +1,75 @@
+{
+  "name": "lnpdb_heartkidney",
+  "run_dir": "experiments",
+  "dataset_name": "lnpdb",
+  "raw_csv": "experiments/data_raw/LNPDB.csv",
+  "json_path": "experiments/data_json/LNPDB_heart_kidney.json",
+  "processed_root": "experiments/processed_data_dirs/lnpdb_heartkidney_gen",
+  "schema_path": "experiments/task_schemas/lnpdb_heart_kidney_schema.json",
+  "target_labels": ["heart", "kidney"],
+  "csv_columns": {
+    "id": "Index",
+    "target": "Model_target",
+    "value": "Experiment_value",
+    "components": {
+      "IL": ["IL_SMILES", "IL_molratio"],
+      "HL": ["HL_SMILES", "HL_molratio"],
+      "PEG": ["PEG_SMILES", "PEG_molratio"],
+      "CH": ["CHL_SMILES", "CHL_molratio"]
+    }
+  },
+  "split": {
+    "kfold_valid": 5,
+    "test_ratio": 0.2,
+    "nthreads": 8
+  },
+  "model": {
+    "pretrained_mol_encoder": "ckp/mol_pre_no_h_220816.pt",
+    "dict_name": "dict.txt",
+    "loss": "np_finetune_contrastive",
+    "arch": "np_unimol",
+    "conf_size": 11,
+    "only_polar": 0,
+    "lnp_encoder_layers": 8,
+    "lnp_encoder_embed_dim": 256,
+    "lnp_encoder_ffn_embed_dim": 256,
+    "lnp_encoder_attention_heads": 8
+  },
+  "train": {
+    "fold": 0,
+    "seed": 1,
+    "epochs": 30,
+    "batch_size": 8,
+    "eval_batch_size": 8,
+    "lr": 0.0001,
+    "warmup_ratio": 0.06,
+    "dropout": 0.1,
+    "metric": "valid_spearmanr_coeff",
+    "patience": 20,
+    "cagrad_c": 0,
+    "percent_noise": 0.1,
+    "percent_noise_type": "normal_proportionate",
+    "contrast_margin_coeff": 0.01,
+    "train_data_ratio": 1,
+    "required_batch_size_multiple": 1,
+    "num_workers": 0,
+    "freeze_molecule_encoder": true,
+    "fp16": true,
+    "run_inference_after_train": true
+  },
+  "outputs": {
+    "save_root": "experiments/save_lnpdb_heartkidney",
+    "tmp_save_root": "experiments/tmp_save_lnpdb_heartkidney",
+    "log_root": "experiments/logs/tmp",
+    "infer_root": "experiments/infer_results",
+    "new_lnp_lmdb": "experiments/inference_inputs/new_lnp_lmdb",
+    "new_lnp_results": "experiments/infer_results/new_lnp_predictions",
+    "wandb_root": "experiments/wandb"
+  },
+  "wandb": {
+    "project": "comet-lnpdb",
+    "entity": null,
+    "mode": null,
+    "tags": ["lnpdb", "heart-kidney"]
+  }
+}

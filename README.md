@@ -22,6 +22,9 @@
     pip install lmdb==1.4.0 ml-collections==0.1.1 numpy==1.23.4 scipy==1.9.3 tensorboardX==2.5.1 tqdm==4.64.1 tokenizers==0.13.2 pyprojroot==0.2.0 pandas==1.5.2 scikit-learn==1.2.0 rdkit-pypi==2022.9.3
     ```
 
+    conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cuda=11.6 -c pytorch -c nvidia
+    pip install lmdb==1.4.0 ml-collections==0.1.1 numpy==1.23.4 scipy==1.9.3 tensorboardX==2.5.1 tqdm==4.64.1 tokenizers==0.13.2 pyprojroot==0.2.0 pandas==1.5.2 scikit-learn==1.2.0 rdkit-pypi==2022.9.3
+
 3. Install Uni-Core, compatible with the specified versions:
     ```bash
     pip install https://github.com/dptech-corp/Uni-Core/releases/download/0.0.2/unicore-0.0.1+cu116torch1.13.1-cp310-cp310-linux_x86_64.whl
@@ -32,6 +35,19 @@ Preprocessing is done to make lmdb dataset (stored in `processed_data_dirs/`) fr
 - `experiments/preprocess_data_LANCE.ipynb`: Processes data for LNPs' efficacy on DC2.4 and B16-F10 cells.
 - `experiments/preprocess_data_CACO2.ipynb`: Includes CACO2 cell transfection data.
 - `experiments/preprocess_data_stability.ipynb`: Processes data for lyophilized LNPs.
+
+## Structured LNPDB Pipeline
+The LNPDB heart/kidney workflow is configured in `configs/lnpdb_heartkidney.json` and wrapped by scripts in `scripts/lnpdb/`.
+
+```bash
+python -m scripts.lnpdb.prepare_data
+python -m scripts.lnpdb.inspect_data --fold 0
+python -m scripts.lnpdb.train --fold 0 --dry-run
+python -m scripts.lnpdb.summarize_results
+python -m scripts.lnpdb.summarize_logs --contains bs8
+```
+
+See `scripts/lnpdb/README.md` for the full prepare -> preprocess -> train -> infer -> summarize flow.
 
 ## Training
 Training scripts for different models:
