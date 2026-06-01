@@ -306,10 +306,52 @@ except ImportError:
     except ImportError:
         SummaryWriter = None
 
+_wandb_run = None
+_wandb_warned = False
+
+
+def _wandb_enabled():
+    return os.environ.get("COMET_WANDB_LIVE", "").lower() in {"1", "true", "yes"}
+
+
+def _get_wandb_run():
+    global _wandb_run, _wandb_warned
+    if not _wandb_enabled():
+        return None
+    if _wandb_run is not None:
+        return _wandb_run
+    try:
+        import wandb
+    except ImportError:
+        if not _wandb_warned:
+            logger.warning("wandb not found; live W&B logging is disabled")
+            _wandb_warned = True
+        return None
+
+    init_kwargs = {
+        "project": os.environ.get("WANDB_PROJECT", "comet-lnpdb"),
+        "name": os.environ.get("COMET_WANDB_RUN_NAME"),
+        "id": os.environ.get("COMET_WANDB_RUN_ID"),
+        "resume": "allow",
+        "dir": os.environ.get("WANDB_DIR"),
+        "reinit": True,
+    }
+    entity = os.environ.get("WANDB_ENTITY")
+    mode = os.environ.get("WANDB_MODE")
+    if entity:
+        init_kwargs["entity"] = entity
+    if mode:
+        init_kwargs["mode"] = mode
+    init_kwargs = {key: value for key, value in init_kwargs.items() if value is not None}
+    _wandb_run = wandb.init(**init_kwargs)
+    return _wandb_run
+
 
 def _close_writers():
     for w in _tensorboard_writers.values():
         w.close()
+    if _wandb_run is not None:
+        _wandb_run.finish()
 
 
 atexit.register(_close_writers)
@@ -357,6 +399,7 @@ class TensorboardProgressBarWrapper(BaseProgressBar):
     def _log_to_tensorboard(self, stats, tag=None, step=None):
         writer = self._writer(tag or "")
         if writer is None:
+            self._log_to_wandb(stats, tag, step)
             return
         if step is None:
             step = stats["num_updates"]
@@ -368,3 +411,23 @@ class TensorboardProgressBarWrapper(BaseProgressBar):
             elif torch.is_tensor(stats[key]) and stats[key].numel() == 1:
                 writer.add_scalar(key, stats[key].item(), step)
         writer.flush()
+        self._log_to_wandb(stats, tag, step)
+
+    def _log_to_wandb(self, stats, tag=None, step=None):
+        wb_run = _get_wandb_run()
+        if wb_run is None:
+            return
+        if step is None:
+            step = stats["num_updates"]
+        prefix = f"{tag}/" if tag else ""
+        payload = {}
+        for key in stats.keys() - {"num_updates"}:
+            value = stats[key]
+            if isinstance(value, AverageMeter):
+                payload[prefix + key] = value.val
+            elif isinstance(value, Number):
+                payload[prefix + key] = value
+            elif torch.is_tensor(value) and value.numel() == 1:
+                payload[prefix + key] = value.item()
+        if payload:
+            wb_run.log(payload, step=step)

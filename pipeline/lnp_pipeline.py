@@ -90,14 +90,7 @@ def load_test_result_metrics(infer_dir):
     return metrics
 
 def log_run_to_wandb(cfg, fold, args, source="train"):
-    wandb_root = repo_path(cfg.get("outputs", {}).get("wandb_root", "experiments/wandb"))
-    wandb_root.mkdir(parents=True, exist_ok=True)
-    for subdir in ("data", "cache", "artifacts"):
-        (wandb_root / subdir).mkdir(parents=True, exist_ok=True)
-    os.environ.setdefault("WANDB_DIR", str(wandb_root))
-    os.environ.setdefault("WANDB_DATA_DIR", str(wandb_root / "data"))
-    os.environ.setdefault("WANDB_CACHE_DIR", str(wandb_root / "cache"))
-    os.environ.setdefault("WANDB_ARTIFACT_DIR", str(wandb_root / "artifacts"))
+    prepare_wandb_environment(cfg, fold, args, live=False)
 
     try:
         import wandb
@@ -106,6 +99,7 @@ def log_run_to_wandb(cfg, fold, args, source="train"):
 
     paths = run_paths(cfg, fold=fold)
     wandb_cfg = get_wandb_cfg(cfg, args)
+    wandb_root = repo_path(cfg.get("outputs", {}).get("wandb_root", "experiments/wandb"))
     run_config = {
         "source": source,
         "fold": fold,
@@ -118,6 +112,8 @@ def log_run_to_wandb(cfg, fold, args, source="train"):
     init_kwargs = {
         "project": wandb_cfg["project"],
         "name": paths["exp_name"],
+        "id": os.environ.get("COMET_WANDB_RUN_ID"),
+        "resume": "allow",
         "config": run_config,
         "tags": wandb_cfg["tags"],
         "dir": str(wandb_root),
@@ -130,8 +126,9 @@ def log_run_to_wandb(cfg, fold, args, source="train"):
 
     with wandb.init(**init_kwargs) as wb_run:
         events_by_step = defaultdict(dict)
-        for event in load_tensorboard_events(paths["log_dir"]):
-            events_by_step[event["step"]][event["tag"]] = event["value"]
+        if source != "train":
+            for event in load_tensorboard_events(paths["log_dir"]):
+                events_by_step[event["step"]][event["tag"]] = event["value"]
         event_count = sum(len(payload) for payload in events_by_step.values())
         for step in sorted(events_by_step):
             wb_run.log(events_by_step[step], step=step)
@@ -215,6 +212,32 @@ def safe_wandb_artifact_name(name, max_len=120):
         return safe
     digest = hashlib.md5(safe.encode("utf-8")).hexdigest()[:10]
     return f"{safe[: max_len - len(digest) - 1]}-{digest}"
+
+
+def prepare_wandb_environment(cfg, fold, args, live=False):
+    paths = run_paths(cfg, fold=fold)
+    wandb_cfg = get_wandb_cfg(cfg, args)
+    wandb_root = repo_path(cfg.get("outputs", {}).get("wandb_root", "experiments/wandb"))
+    wandb_root.mkdir(parents=True, exist_ok=True)
+    for subdir in ("data", "cache", "artifacts"):
+        (wandb_root / subdir).mkdir(parents=True, exist_ok=True)
+    run_id = hashlib.md5(paths["exp_name"].encode("utf-8")).hexdigest()
+    env_updates = {
+        "COMET_WANDB_LIVE": "1" if live else "0",
+        "COMET_WANDB_RUN_NAME": paths["exp_name"],
+        "COMET_WANDB_RUN_ID": run_id,
+        "WANDB_PROJECT": wandb_cfg["project"],
+        "WANDB_DIR": str(wandb_root),
+        "WANDB_DATA_DIR": str(wandb_root / "data"),
+        "WANDB_CACHE_DIR": str(wandb_root / "cache"),
+        "WANDB_ARTIFACT_DIR": str(wandb_root / "artifacts"),
+    }
+    if wandb_cfg["entity"]:
+        env_updates["WANDB_ENTITY"] = wandb_cfg["entity"]
+    if wandb_cfg["mode"]:
+        env_updates["WANDB_MODE"] = wandb_cfg["mode"]
+    os.environ.update(env_updates)
+    return env_updates
 
 
 def build_base_unimol_args(cfg, task_name):
@@ -458,6 +481,8 @@ def run_training_workflow(cfg, fold, args):
         for key in ("save_dir", "tmp_save_dir", "log_dir"):
             if paths[key].exists():
                 shutil.rmtree(paths[key])
+    if args.wandb and not args.dry_run:
+        prepare_wandb_environment(cfg, fold, args, live=True)
     result = run(build_train_cmd(cfg, fold=fold), cwd=cfg["run_dir"], dry_run=args.dry_run)
     if result.returncode != 0:
         raise SystemExit(result.returncode)

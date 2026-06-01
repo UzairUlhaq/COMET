@@ -22,8 +22,8 @@ COMPONENTS = {
 # JSON->LMDB preprocessing step, which hard-accesses content['dataset_name']).
 DATASET_NAME = "lnpdb"
 DEFAULT_INPUT_PATH = Path("experiments/data_raw/LNPDB.csv")
-DEFAULT_OUTPUT_PATH = Path("experiments/data_json/LNPDB_heart_kidney.json")
-DEFAULT_TARGET_LABELS = ("heart", "kidney")
+DEFAULT_OUTPUT_PATH = Path("experiments/data_json/LNPDB_heart.json")
+DEFAULT_TARGET_LABELS = ("heart",)
 
 
 def build_lnpdb_json(df, target_labels=None):
@@ -67,7 +67,7 @@ def parse_args():
         "--target-labels",
         nargs="*",
         default=list(DEFAULT_TARGET_LABELS),
-        help="Model_target values to keep. Default: heart kidney.",
+            help="Model_target values to keep. Default: heart.",
     )
     parser.add_argument(
         "--all-labels",
@@ -83,7 +83,7 @@ def main():
     output_path = Path(args.output_path)
     target_labels = None if args.all_labels else args.target_labels
 
-    df = pd.read_csv(input_path)
+    df = pd.read_csv(input_path, low_memory=False)
     data_dict = build_lnpdb_json(df, target_labels=target_labels)
 
     output_path.parent.mkdir(parents=True, exist_ok=True)

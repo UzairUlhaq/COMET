@@ -1,0 +1,2690 @@
+{
+    "13202": {
+        "components": [
+            {
+                "smi": "CCCCC(C)C(=O)Oc1cc(CNCCN(C)CCNCc2cc(OC(=O)C(C)CCCC)cc(OC(=O)C(C)CCCC)c2)cc(OC(=O)C(C)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -0.219378448
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13203": {
+        "components": [
+            {
+                "smi": "CCCCC(C)C(=O)Oc1cc(CNCCCN(C)CCCNCc2cc(OC(=O)C(C)CCCC)cc(OC(=O)C(C)CCCC)c2)cc(OC(=O)C(C)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.684675893
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13204": {
+        "components": [
+            {
+                "smi": "CCCCC(C)C(=O)Oc1cc(CNCCN2CCN(CCNCc3cc(OC(=O)C(C)CCCC)cc(OC(=O)C(C)CCCC)c3)CC2)cc(OC(=O)C(C)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 1.263319867
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13205": {
+        "components": [
+            {
+                "smi": "CCCCC(C)C(=O)Oc1cc(CNCCCN2CCN(CCCNCc3cc(OC(=O)C(C)CCCC)cc(OC(=O)C(C)CCCC)c3)CC2)cc(OC(=O)C(C)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 1.251311545
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13206": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCN(C)CCNCc2c(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)cc2OC(=O)CCC(CC)CCCC)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.057589723
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13207": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCN(C)CCNCc2c(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)cc2OC(=O)CCC(CC)CCCC)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -0.111936137
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13208": {
+        "components": [
+            {
+                "smi": "CCCCCC(C)C(=O)Oc1cc(CNCCN(C)CCNCc2cc(OC(=O)C(C)CCCCC)cc(OC(=O)C(C)CCCCC)c2)cc(OC(=O)C(C)CCCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.250086275
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13209": {
+        "components": [
+            {
+                "smi": "CCCCCC(C)C(=O)Oc1cc(CNCCCN(C)CCCNCc2cc(OC(=O)C(C)CCCCC)cc(OC(=O)C(C)CCCCC)c2)cc(OC(=O)C(C)CCCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -0.001013345
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13210": {
+        "components": [
+            {
+                "smi": "CCCCCC(C)C(=O)Oc1cc(CNCCN2CCN(CCNCc3cc(OC(=O)C(C)CCCCC)cc(OC(=O)C(C)CCCCC)c3)CC2)cc(OC(=O)C(C)CCCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.848396295
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13211": {
+        "components": [
+            {
+                "smi": "CCCCCC(C)C(=O)Oc1cc(CNCCCN2CCN(CCCNCc3cc(OC(=O)C(C)CCCCC)cc(OC(=O)C(C)CCCCC)c3)CC2)cc(OC(=O)C(C)CCCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 1.191146861
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13212": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCN(C)CCNCc2c(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)cc2OC(=O)CCC(CC)CCCC)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.059663399
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13213": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCN(C)CCNCc2c(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)cc2OC(=O)CCC(CC)CCCC)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 1.44549306
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13214": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)C(=O)Oc1cc(CNCCN(C)CCNCc2cc(OC(=O)C(CC)CCCC)cc(OC(=O)C(CC)CCCC)c2)cc(OC(=O)C(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -0.228780174
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13215": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)C(=O)Oc1cc(CNCCCN(C)CCCNCc2cc(OC(=O)C(CC)CCCC)cc(OC(=O)C(CC)CCCC)c2)cc(OC(=O)C(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.457199768
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13216": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)C(=O)Oc1cc(CNCCN2CCN(CCNCc3cc(OC(=O)C(CC)CCCC)cc(OC(=O)C(CC)CCCC)c3)CC2)cc(OC(=O)C(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 1.446488439
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13217": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)C(=O)Oc1cc(CNCCCN2CCN(CCCNCc3cc(OC(=O)C(CC)CCCC)cc(OC(=O)C(CC)CCCC)c3)CC2)cc(OC(=O)C(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -1.070484785
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13218": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCN(C)CCNCc2c(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)cc2OC(=O)CCC(CC)CCCC)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -2.886865162
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13219": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCN(C)CCNCc2c(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)cc2OC(=O)CCC(CC)CCCC)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -0.061168977
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13220": {
+        "components": [
+            {
+                "smi": "CCCCC(C)CCC(=O)Oc1cc(CNCCN(C)CCNCc2cc(OC(=O)CCC(C)CCCC)cc(OC(=O)CCC(C)CCCC)c2)cc(OC(=O)CCC(C)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.231936596
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13221": {
+        "components": [
+            {
+                "smi": "CCCCC(C)CCC(=O)Oc1cc(CNCCCN(C)CCCNCc2cc(OC(=O)CCC(C)CCCC)cc(OC(=O)CCC(C)CCCC)c2)cc(OC(=O)CCC(C)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -0.048901865
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13222": {
+        "components": [
+            {
+                "smi": "CCCCC(C)CCC(=O)Oc1cc(CNCCN2CCN(CCNCc3cc(OC(=O)CCC(C)CCCC)cc(OC(=O)CCC(C)CCCC)c3)CC2)cc(OC(=O)CCC(C)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.174720888
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13223": {
+        "components": [
+            {
+                "smi": "CCCCC(C)CCC(=O)Oc1cc(CNCCCN2CCN(CCCNCc3cc(OC(=O)CCC(C)CCCC)cc(OC(=O)CCC(C)CCCC)c3)CC2)cc(OC(=O)CCC(C)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.992859571
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13224": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCN(C)CCNCc2c(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)cc2OC(=O)CCC(CC)CCCC)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 1.153892551
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13225": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCN(C)CCNCc2c(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)cc2OC(=O)CCC(CC)CCCC)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 1.72654018
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13226": {
+        "components": [
+            {
+                "smi": "CCCCCC(C)CCC(=O)Oc1cc(CNCCN(C)CCNCc2cc(OC(=O)CCC(C)CCCCC)cc(OC(=O)CCC(C)CCCCC)c2)cc(OC(=O)CCC(C)CCCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -0.280683188
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13227": {
+        "components": [
+            {
+                "smi": "CCCCCC(C)CCC(=O)Oc1cc(CNCCCN(C)CCCNCc2cc(OC(=O)CCC(C)CCCCC)cc(OC(=O)CCC(C)CCCCC)c2)cc(OC(=O)CCC(C)CCCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.194881601
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13228": {
+        "components": [
+            {
+                "smi": "CCCCCC(C)CCC(=O)Oc1cc(CNCCN2CCN(CCNCc3cc(OC(=O)CCC(C)CCCCC)cc(OC(=O)CCC(C)CCCCC)c3)CC2)cc(OC(=O)CCC(C)CCCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.700840865
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13229": {
+        "components": [
+            {
+                "smi": "CCCCCC(C)CCC(=O)Oc1cc(CNCCCN2CCN(CCCNCc3cc(OC(=O)CCC(C)CCCCC)cc(OC(=O)CCC(C)CCCCC)c3)CC2)cc(OC(=O)CCC(C)CCCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.836349594
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13230": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCN(C)CCNCc2c(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)cc2OC(=O)CCC(CC)CCCC)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -0.543259673
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13231": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCN(C)CCNCc2c(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)cc2OC(=O)CCC(CC)CCCC)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -0.153411156
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13232": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(CNCCN(C)CCNCc2cc(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)c2)cc(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 1.014790706
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13233": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(CNCCCN(C)CCCNCc2cc(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)c2)cc(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 1.563917963
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13234": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(CNCCN2CCN(CCNCc3cc(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)c3)CC2)cc(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -0.618784734
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13235": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(CNCCCN2CCN(CCCNCc3cc(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)c3)CC2)cc(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.572266616
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13236": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCN(C)CCNCc2c(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)cc2OC(=O)CCC(CC)CCCC)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -0.398547657
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13237": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCN(C)CCNCc2c(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)cc2OC(=O)CCC(CC)CCCC)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -0.405965808
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13238": {
+        "components": [
+            {
+                "smi": "CCCCC(C)C(=O)Oc1cc(OC(=O)C(C)CCCC)c(CNCCN(C)CCNCc2c(OC(=O)C(C)CCCC)cc(OC(=O)C(C)CCCC)cc2OC(=O)C(C)CCCC)c(OC(=O)C(C)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -1.426742948
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13239": {
+        "components": [
+            {
+                "smi": "CCCCC(C)C(=O)Oc1cc(OC(=O)C(C)CCCC)c(CNCCCN(C)CCCNCc2c(OC(=O)C(C)CCCC)cc(OC(=O)C(C)CCCC)cc2OC(=O)C(C)CCCC)c(OC(=O)C(C)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -1.074455611
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13240": {
+        "components": [
+            {
+                "smi": "CCCCC(C)C(=O)Oc1cc(OC(=O)C(C)CCCC)c(CNCCN2CCN(CCNCc3c(OC(=O)C(C)CCCC)cc(OC(=O)C(C)CCCC)cc3OC(=O)C(C)CCCC)CC2)c(OC(=O)C(C)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -2.141901451
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13241": {
+        "components": [
+            {
+                "smi": "CCCCC(C)C(=O)Oc1cc(OC(=O)C(C)CCCC)c(CNCCCN2CCN(CCCNCc3c(OC(=O)C(C)CCCC)cc(OC(=O)C(C)CCCC)cc3OC(=O)C(C)CCCC)CC2)c(OC(=O)C(C)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -1.633984087
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13242": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCN(C)CCNCc2c(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)cc2OC(=O)CCC(CC)CCCC)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -1.056868686
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13243": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCN(C)CCNCc2c(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)cc2OC(=O)CCC(CC)CCCC)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -1.268845225
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13244": {
+        "components": [
+            {
+                "smi": "CCCCCC(C)C(=O)Oc1cc(OC(=O)C(C)CCCCC)c(CNCCN(C)CCNCc2c(OC(=O)C(C)CCCCC)cc(OC(=O)C(C)CCCCC)cc2OC(=O)C(C)CCCCC)c(OC(=O)C(C)CCCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -0.084860255
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13245": {
+        "components": [
+            {
+                "smi": "CCCCCC(C)C(=O)Oc1cc(OC(=O)C(C)CCCCC)c(CNCCCN(C)CCCNCc2c(OC(=O)C(C)CCCCC)cc(OC(=O)C(C)CCCCC)cc2OC(=O)C(C)CCCCC)c(OC(=O)C(C)CCCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -0.851174922
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13246": {
+        "components": [
+            {
+                "smi": "CCCCCC(C)C(=O)Oc1cc(OC(=O)C(C)CCCCC)c(CNCCN2CCN(CCNCc3c(OC(=O)C(C)CCCCC)cc(OC(=O)C(C)CCCCC)cc3OC(=O)C(C)CCCCC)CC2)c(OC(=O)C(C)CCCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -0.716839202
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13247": {
+        "components": [
+            {
+                "smi": "CCCCCC(C)C(=O)Oc1cc(OC(=O)C(C)CCCCC)c(CNCCCN2CCN(CCCNCc3c(OC(=O)C(C)CCCCC)cc(OC(=O)C(C)CCCCC)cc3OC(=O)C(C)CCCCC)CC2)c(OC(=O)C(C)CCCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -0.237098058
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13248": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCN(C)CCNCc2c(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)cc2OC(=O)CCC(CC)CCCC)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -0.938328982
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13249": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCN(C)CCNCc2c(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)cc2OC(=O)CCC(CC)CCCC)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -0.759930273
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13250": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)C(=O)Oc1cc(OC(=O)C(CC)CCCC)c(CNCCN(C)CCNCc2c(OC(=O)C(CC)CCCC)cc(OC(=O)C(CC)CCCC)cc2OC(=O)C(CC)CCCC)c(OC(=O)C(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 1.031680497
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13251": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)C(=O)Oc1cc(OC(=O)C(CC)CCCC)c(CNCCCN(C)CCCNCc2c(OC(=O)C(CC)CCCC)cc(OC(=O)C(CC)CCCC)cc2OC(=O)C(CC)CCCC)c(OC(=O)C(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.651537135
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13252": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)C(=O)Oc1cc(OC(=O)C(CC)CCCC)c(CNCCN2CCN(CCNCc3c(OC(=O)C(CC)CCCC)cc(OC(=O)C(CC)CCCC)cc3OC(=O)C(CC)CCCC)CC2)c(OC(=O)C(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.532355409
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13253": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)C(=O)Oc1cc(OC(=O)C(CC)CCCC)c(CNCCCN2CCN(CCCNCc3c(OC(=O)C(CC)CCCC)cc(OC(=O)C(CC)CCCC)cc3OC(=O)C(CC)CCCC)CC2)c(OC(=O)C(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.016968581
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13254": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCN(C)CCNCc2c(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)cc2OC(=O)CCC(CC)CCCC)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -0.508651596
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13255": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCN(C)CCNCc2c(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)cc2OC(=O)CCC(CC)CCCC)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.03371888
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13256": {
+        "components": [
+            {
+                "smi": "CCCCC(C)CCC(=O)Oc1cc(OC(=O)CCC(C)CCCC)c(CNCCN(C)CCNCc2c(OC(=O)CCC(C)CCCC)cc(OC(=O)CCC(C)CCCC)cc2OC(=O)CCC(C)CCCC)c(OC(=O)CCC(C)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.851335611
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13257": {
+        "components": [
+            {
+                "smi": "CCCCC(C)CCC(=O)Oc1cc(OC(=O)CCC(C)CCCC)c(CNCCCN(C)CCCNCc2c(OC(=O)CCC(C)CCCC)cc(OC(=O)CCC(C)CCCC)cc2OC(=O)CCC(C)CCCC)c(OC(=O)CCC(C)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 1.718794372
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13258": {
+        "components": [
+            {
+                "smi": "CCCCC(C)CCC(=O)Oc1cc(OC(=O)CCC(C)CCCC)c(CNCCN2CCN(CCNCc3c(OC(=O)CCC(C)CCCC)cc(OC(=O)CCC(C)CCCC)cc3OC(=O)CCC(C)CCCC)CC2)c(OC(=O)CCC(C)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -0.472143634
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13259": {
+        "components": [
+            {
+                "smi": "CCCCC(C)CCC(=O)Oc1cc(OC(=O)CCC(C)CCCC)c(CNCCCN2CCN(CCCNCc3c(OC(=O)CCC(C)CCCC)cc(OC(=O)CCC(C)CCCC)cc3OC(=O)CCC(C)CCCC)CC2)c(OC(=O)CCC(C)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -0.067475553
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13260": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCN(C)CCNCc2c(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)cc2OC(=O)CCC(CC)CCCC)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -0.616574499
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13261": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCN(C)CCNCc2c(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)cc2OC(=O)CCC(CC)CCCC)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -0.517064596
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13262": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCN(C)CCNCc2c(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)cc2OC(=O)CCC(CC)CCCC)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -0.496178823
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13263": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCCN(C)CCCNCc2c(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)cc2OC(=O)CCC(CC)CCCC)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.045861976
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13264": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCN2CCN(CCNCc3c(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)cc3OC(=O)CCC(CC)CCCC)CC2)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.44823933
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13265": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCCN2CCN(CCCNCc3c(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)cc3OC(=O)CCC(CC)CCCC)CC2)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -0.121987241
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13266": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCN(C)CCNCc2c(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)cc2OC(=O)CCC(CC)CCCC)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -0.989742314
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13267": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCN(C)CCNCc2c(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)cc2OC(=O)CCC(CC)CCCC)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -0.363882039
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13268": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)C(=O)Oc1cc(CNCCN(C)CCNCc2cc(OC(=O)C(CC)CCCC)cc(OC(=O)C(CC)CCCC)c2)cc(OC(=O)C(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.165235769
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13269": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)C(=O)Oc1cc(CNCCCN(C)CCCNCc2cc(OC(=O)C(CC)CCCC)cc(OC(=O)C(CC)CCCC)c2)cc(OC(=O)C(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -0.546618119
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13270": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)C(=O)Oc1cc(CNCCN2CCN(CCNCc3cc(OC(=O)C(CC)CCCC)cc(OC(=O)C(CC)CCCC)c3)CC2)cc(OC(=O)C(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.016832097
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13271": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)C(=O)Oc1cc(CNCCCN2CCN(CCCNCc3cc(OC(=O)C(CC)CCCC)cc(OC(=O)C(CC)CCCC)c3)CC2)cc(OC(=O)C(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.152093224
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13272": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCN(C)CCNCc2c(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)cc2OC(=O)CCC(CC)CCCC)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.419538853
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13273": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCN(C)CCNCc2c(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)cc2OC(=O)CCC(CC)CCCC)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -0.387925196
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13274": {
+        "components": [
+            {
+                "smi": "CCCCC(C)C(=O)Oc1cc(CNCCN(C)CCNCc2cc(OC(=O)C(C)CCCC)cc(OC(=O)C(C)CCCC)c2)cc(OC(=O)C(C)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 1.998773631
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13275": {
+        "components": [
+            {
+                "smi": "CCCCC(C)C(=O)Oc1cc(CNCCN(C)C)cc(OC(=O)C(C)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.437477179
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13276": {
+        "components": [
+            {
+                "smi": "CCCCC(C)C(=O)Oc1cc(CNCCN2CCN(C)CC2)cc(OC(=O)C(C)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.705692488
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13277": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)C(=O)Oc1cc(CNCCCN(C)C)cc(OC(=O)C(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 1.194230951
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13278": {
+        "components": [
+            {
+                "smi": "CCCCCC(C)C(=O)Oc1cc(CNCCCN(CC)CC)cc(OC(=O)C(C)CCCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.21056513
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13279": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)C(=O)Oc1cc(CNCCCN(CC)CC)cc(OC(=O)C(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.857933668
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13280": {
+        "components": [
+            {
+                "smi": "CCCCC(C)CCC(=O)Oc1cc(CNCCN(C)C)cc(OC(=O)CCC(C)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.368631359
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13281": {
+        "components": [
+            {
+                "smi": "CCCCC(C)CCC(=O)Oc1cc(CNCCCN(C)C)cc(OC(=O)CCC(C)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.723715818
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13282": {
+        "components": [
+            {
+                "smi": "CCCCC(C)CCC(=O)Oc1cc(CNCCN(CC)CC)cc(OC(=O)CCC(C)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.796620993
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13283": {
+        "components": [
+            {
+                "smi": "CCCCC(C)CCC(=O)Oc1cc(CNCCCN(CC)CC)cc(OC(=O)CCC(C)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -0.22577355
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13284": {
+        "components": [
+            {
+                "smi": "CCCCC(C)CCC(=O)Oc1cc(CNCCN2CCN(C)CC2)cc(OC(=O)CCC(C)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 1.108763968
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13285": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCN(C)CCNCc2c(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)cc2OC(=O)CCC(CC)CCCC)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -0.136024441
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13286": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCN(C)CCNCc2c(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)cc2OC(=O)CCC(CC)CCCC)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -2.481486381
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13287": {
+        "components": [
+            {
+                "smi": "CCCCC(C)C(=O)Oc1cc(OC(=O)C(C)CCCC)c(CNCCCN(C)C)c(OC(=O)C(C)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -2.854726843
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13288": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCN(C)CCNCc2c(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)cc2OC(=O)CCC(CC)CCCC)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -2.371448587
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13289": {
+        "components": [
+            {
+                "smi": "CCCCCC(C)C(=O)Oc1cc(OC(=O)C(C)CCCCC)c(CNCCN(CC)CC)c(OC(=O)C(C)CCCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -0.759798006
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13290": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCN(C)CCNCc2c(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)cc2OC(=O)CCC(CC)CCCC)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -1.558525634
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13291": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)C(=O)Oc1cc(OC(=O)C(CC)CCCC)c(CNCCCN(C)C)c(OC(=O)C(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -1.86969302
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13292": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)C(=O)Oc1cc(OC(=O)C(CC)CCCC)c(CNCCCN(CC)CC)c(OC(=O)C(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.48521259
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13293": {
+        "components": [
+            {
+                "smi": "CCCCC(C)CCC(=O)Oc1cc(OC(=O)CCC(C)CCCC)c(CNCCN(C)C)c(OC(=O)CCC(C)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.690237244
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13294": {
+        "components": [
+            {
+                "smi": "CCCCC(C)CCC(=O)Oc1cc(OC(=O)CCC(C)CCCC)c(CNCCN(CC)CC)c(OC(=O)CCC(C)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.940582242
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13295": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCN(C)C)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 1.283920583
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13296": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCN(CC)CC)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": 0.810042518
+        },
+        "dataset_name": "lnpdb"
+    },
+    "13297": {
+        "components": [
+            {
+                "smi": "CCCCC(CC)CCC(=O)Oc1cc(OC(=O)CCC(CC)CCCC)c(CNCCN(C)CCNCc2c(OC(=O)CCC(CC)CCCC)cc(OC(=O)CCC(CC)CCCC)cc2OC(=O)CCC(CC)CCCC)c(OC(=O)CCC(CC)CCCC)c1",
+                "component_type": "IL",
+                "mol": 35.0
+            },
+            {
+                "smi": "[H][C@@](COP([O-])(OCC[NH3+])=O)(OC(CCCCCCC/C=C\\\\CCCCCCCC)=O)COC(CCCCCCC/C=C\\\\CCCCCCCC)=O",
+                "component_type": "HL",
+                "mol": 16.0
+            },
+            {
+                "smi": "CCCCCCCCCCCCCC(=O)OCC(COP(=O)(OCCNCC(=O)OCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOC)O)OC(=O)CCCCCCCCCCCCC",
+                "component_type": "PEG",
+                "mol": 2.5
+            },
+            {
+                "smi": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)O)C)C",
+                "component_type": "CH",
+                "mol": 46.5
+            }
+        ],
+        "labels": {
+            "heart": -0.249029473
+        },
+        "dataset_name": "lnpdb"
+    }
+}

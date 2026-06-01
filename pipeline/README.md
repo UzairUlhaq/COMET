@@ -44,6 +44,25 @@ Run inference only:
 python pipeline/lnp_pipeline.py infer --config pipeline/configs/lnpdb_heartkidney.json --fold 0
 ```
 
+Train the in-house CACO2/B16F10/DC24 dataset:
+
+```bash
+python pipeline/lnp_pipeline.py inspect --config pipeline/configs/in_house_caco2.json --fold 0
+python pipeline/lnp_pipeline.py train --config pipeline/configs/in_house_caco2.json --fold 0 --clean
+```
+
+Or use the convenience wrapper:
+
+```bash
+bash pipeline/train_in_house_caco2.sh
+```
+
+Add `--wandb` to stream training loss and validation metrics:
+
+```bash
+bash pipeline/train_in_house_caco2.sh --wandb
+```
+
 Score new LNP candidates:
 
 ```bash
@@ -64,6 +83,10 @@ Log losses and metrics to Weights & Biases:
 ```bash
 python pipeline/lnp_pipeline.py train --config pipeline/configs/lnpdb_heartkidney.json --fold 0 --clean --wandb
 ```
+
+With `--wandb`, training loss and validation metrics stream live while the
+model is running, then the final test metrics and best checkpoint are attached
+to the same W&B run.
 
 To upload an already-finished run:
 
@@ -138,3 +161,19 @@ python pipeline/lnp_pipeline.py train --config pipeline/configs/lnpdb_organs.jso
 - `freeze_molecule_encoder: true` keeps GPU memory lower and is recommended for small datasets.
 - Set `pretrained_mol_encoder` to `null` and `freeze_molecule_encoder` to `false` only if you intentionally want training from scratch.
 - New-LNP predictions are regression scores, not calibrated probabilities.
+
+
+## Sweep
+
+python pipeline/lnp_pipeline.py sweep \
+  --config pipeline/configs/lnpdb_heartkidney.json \
+  --name quick_lr_bs_search \
+  --folds 0 \
+  --lr 3e-5 \
+  --batch-size  8 \
+  --percent-noise 0.1 \
+  --cagrad-c 0 \
+  --contrast-margin-coeff 0.01 \
+  --clean \
+  --skip-existing \
+  --wandb
