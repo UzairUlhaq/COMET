@@ -141,9 +141,11 @@ experiments/tmp_save_demo/*
 ckp/
 
 # COMET / LNPDB generated data, logs, checkpoints, and caches
+# Only .py source is tracked; checkpoints (*.pt) and all .json data/configs are ignored.
 *.lmdb
 *.pt
 *.pkl
+*.json
 events.out.tfevents.*
 wandb/
 experiments/wandb/

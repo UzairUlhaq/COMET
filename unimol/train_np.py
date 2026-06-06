@@ -202,6 +202,9 @@ def main(args) -> None:
         ckp_copy_thread.close()
         ckp_copy_thread.join()
     logger.info("done training in {:.1f} seconds".format(train_meter.sum))
+    # Finish the W&B run now, while its service is still alive, so the run summary
+    # is written; leaving it to the atexit hook races W&B's own teardown.
+    progress_bar.finish_logging()
 
 
 def should_stop_early(args, valid_loss: float) -> bool:

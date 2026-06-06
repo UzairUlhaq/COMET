@@ -1,102 +1,85 @@
-import pandas as pd
-import json
-from collections import Counter
-from pathlib import Path
+"""LNPDB organ-classification preprocessing.
+
+Stage 1 (this file): clean the raw LNPDB.csv into a slim CSV that keeps only
+the 4 lipid components (SMILES + mol ratio) and the target organ.
+
+  raw LNPDB.csv  ->  LNPDB_clean.csv  ->  (later) COMET JSON / LMDB
+
+Cleaning rules:
+  1. Drop rows whose target organ (Model_target) is NaN.
+  2. Keep only the 4 lipids (IL / HL / PEG / CH, each SMILES + mol ratio) and
+     Model_target; drop everything else.
+  3. Do NOT require all 4 lipids -- formulations legitimately lack a component
+     (e.g. no HL or no PEG). Missing components are left as NaN here and simply
+     omitted when components are built downstream; the row is kept.
+"""
+
 import argparse
+from pathlib import Path
+
+import pandas as pd
 
 
-# -----------------------
-# Component mapping
-# -----------------------
-# Maps output component_type -> (smiles_col, mol_col).
-# Note: cholesterol is emitted as "CH" (not "CHL") so it matches the
-# component_type vocabulary used by the pretrained encoder / task schema.
-COMPONENTS = {
-    "IL": ("IL_SMILES", "IL_molratio"),
-    "HL": ("HL_SMILES", "HL_molratio"),
-    "PEG": ("PEG_SMILES", "PEG_molratio"),
-    "CH": ("CHL_SMILES", "CHL_molratio"),
-}
+# The 4 lipid components, in (SMILES column, mol-ratio column) pairs.
+# CHL = cholesterol; emitted downstream as the "CH" component type.
+LIPID_COLUMNS = [
+    "IL_SMILES", "IL_molratio",
+    "HL_SMILES", "HL_molratio",
+    "PEG_SMILES", "PEG_molratio",
+    "CHL_SMILES", "CHL_molratio",
+]
+TARGET_COLUMN = "Model_target"
+KEEP_COLUMNS = LIPID_COLUMNS + [TARGET_COLUMN]
 
-# Dataset name groups all LNPDB samples into a single task (required by the
-# JSON->LMDB preprocessing step, which hard-accesses content['dataset_name']).
-DATASET_NAME = "lnpdb"
 DEFAULT_INPUT_PATH = Path("experiments/data_raw/LNPDB.csv")
-DEFAULT_OUTPUT_PATH = Path("experiments/data_json/LNPDB_heart.json")
-DEFAULT_TARGET_LABELS = ("heart",)
+DEFAULT_OUTPUT_PATH = Path("experiments/data_processed/LNPDB_clean.csv")
 
 
-def build_lnpdb_json(df, target_labels=None):
-    target_labels = set(target_labels or [])
-    keep_all_labels = len(target_labels) == 0
+def clean_lnpdb(df):
+    """Return (clean_df, stats): slim CSV with only the 4 lipids + target organ
+    and no NaNs in any kept column."""
+    n_raw = len(df)
 
-    # Skip rows whose target/value is missing. Optionally keep only the chosen
-    # label rows so small target-specific experiments do not process all LNPDB.
-    return {
-        str(row["Index"]): {
-            "components": [
-                {
-                    "smi": row[smiles_col],
-                    "component_type": comp_type,
-                    "mol": row[mol_col],
-                }
-                for comp_type, (smiles_col, mol_col) in COMPONENTS.items()
-                if pd.notna(row[smiles_col])
-            ],
-            "labels": {
-                row["Model_target"]: row["Experiment_value"]
-            },
-            "dataset_name": DATASET_NAME,
-        }
-        for row in df.to_dict("records")
-        if (
-            pd.notna(row["Model_target"])
-            and pd.notna(row["Experiment_value"])
-            and (keep_all_labels or row["Model_target"] in target_labels)
-        )
+    # 1. Drop rows with a missing target organ.
+    df = df[df[TARGET_COLUMN].notna()]
+    n_after_target = len(df)
+
+    # 2. Keep only the 4 lipids + target organ. Missing components stay NaN.
+    df = df[KEEP_COLUMNS].copy()
+
+    stats = {
+        "raw_rows": n_raw,
+        "after_drop_nan_target": n_after_target,
+        "rows_missing_a_component": int(df[LIPID_COLUMNS].isna().any(axis=1).sum()),
     }
+    return df, stats
 
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="Convert LNPDB.csv into COMET JSON. Defaults to heart/kidney only."
+        description="Clean LNPDB.csv -> slim CSV of 4 lipids + target organ."
     )
     parser.add_argument("--input-path", default=str(DEFAULT_INPUT_PATH))
     parser.add_argument("--output-path", default=str(DEFAULT_OUTPUT_PATH))
-    parser.add_argument(
-        "--target-labels",
-        nargs="*",
-        default=list(DEFAULT_TARGET_LABELS),
-            help="Model_target values to keep. Default: heart.",
-    )
-    parser.add_argument(
-        "--all-labels",
-        action="store_true",
-        help="Keep all non-missing Model_target rows. Use with --output-path data_json/LNPDB.json for full LNPDB.",
-    )
     return parser.parse_args()
 
 
 def main():
     args = parse_args()
-    input_path = Path(args.input_path)
     output_path = Path(args.output_path)
-    target_labels = None if args.all_labels else args.target_labels
 
-    df = pd.read_csv(input_path, low_memory=False)
-    data_dict = build_lnpdb_json(df, target_labels=target_labels)
+    df = pd.read_csv(args.input_path, low_memory=False)
+    clean_df, stats = clean_lnpdb(df)
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(data_dict, f, indent=4, ensure_ascii=False)
+    clean_df.to_csv(output_path, index=False)
 
-    label_counts = Counter(
-        next(iter(sample["labels"].keys()))
-        for sample in data_dict.values()
-    )
-    label_desc = "all labels" if args.all_labels else ", ".join(args.target_labels)
-    print(f"Saved {len(data_dict)} {label_desc} samples to {output_path}")
-    print("Label value counts:", label_counts)
+    print(f"Saved {len(clean_df)} clean rows to {output_path}")
+    print(f"  raw rows                       : {stats['raw_rows']}")
+    print(f"  after dropping NaN Model_target: {stats['after_drop_nan_target']}")
+    print(f"  rows kept missing >=1 component: {stats['rows_missing_a_component']}")
+    print("\nTarget organ counts:")
+    print(clean_df[TARGET_COLUMN].value_counts().to_string())
 
 
 if __name__ == "__main__":

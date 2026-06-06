@@ -430,11 +430,11 @@ class Trainer(object):
                     self.get_loss().load_state_dict(state["loss"], strict=True)
                     del state["loss"]
 
-            except Exception:
+            except Exception as e:
                 raise Exception(
                     "Cannot load model parameters from checkpoint {}; "
                     "please ensure that the architectures match.".format(filename)
-                )
+                ) from e
             extra_state = state["extra_state"] if "extra_state" in state else None
             self._optim_history = (
                 state["optimizer_history"] if "optimizer_history" in state else None

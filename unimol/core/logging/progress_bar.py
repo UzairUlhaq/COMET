@@ -350,8 +350,25 @@ def _get_wandb_run():
 def _close_writers():
     for w in _tensorboard_writers.values():
         w.close()
+    global _wandb_run
     if _wandb_run is not None:
-        _wandb_run.finish()
+        try:
+            _wandb_run.finish()
+        except Exception as e:
+            # finish() runs from an atexit hook and can race the W&B service
+            # shutdown (e.g. ConnectionResetError); the run's data is already
+            # flushed, so don't let teardown noise crash the process.
+            logger.warning(f"wandb finish() raised during shutdown: {e}")
+        finally:
+            _wandb_run = None
+
+
+def finish_logging():
+    """Flush and finish the W&B run (and tensorboard writers) while the program is
+    still running. Call this at the end of training: relying on the atexit hook
+    alone races W&B's own atexit teardown (which shuts the W&B service down first),
+    so finish() then fails to write the run summary."""
+    _close_writers()
 
 
 atexit.register(_close_writers)

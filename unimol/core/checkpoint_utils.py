@@ -175,6 +175,12 @@ def load_checkpoint(args, trainer, **passthrough_args):
         )
 
     suffix = trainer.checkpoint_suffix
+    # The pretrained encoder (--finetune-from-model) holds only mol_model
+    # weights, so it must be loaded into mol_model alone. A saved checkpoint,
+    # by contrast, holds the FULL NP model and must be loaded whole — loading
+    # it into mol_model alone aliases the NP-level gbf ([1,1]) onto
+    # mol_model.gbf ([961,1]) and crashes with a size mismatch.
+    loading_pretrained_encoder = False
     if (
         args.restore_file == "checkpoint_last.pt"
     ):  # default value of restore_file is 'checkpoint_last.pt'
@@ -187,6 +193,7 @@ def load_checkpoint(args, trainer, **passthrough_args):
             # else just use usual logic to load checkpoint, e.g. restart from last checkpoint and etc.
             if os.path.exists(args.finetune_from_model):
                 checkpoint_path = args.finetune_from_model
+                loading_pretrained_encoder = True
                 reset_optimizer = True
                 reset_lr_scheduler = True
                 reset_meters = True
@@ -210,6 +217,27 @@ def load_checkpoint(args, trainer, **passthrough_args):
             "can not be specified together: " + str(args)
         )
 
+    # Resuming a saved checkpoint (not the pretrained encoder) must restore the
+    # whole NP model, otherwise the full NP state_dict is loaded into mol_model
+    # alone and the NP-level gbf collides with mol_model.gbf (size mismatch).
+    load_full_np_model = args.load_full_np_model or not loading_pretrained_encoder
+
+    # On resume (as opposed to a fresh finetune-from-model launch), trainer
+    # .load_checkpoint eagerly rebuilds the optimizer to restore its state, which
+    # constructs the LR scheduler. polynomial_decay needs total_train_steps at
+    # construction, but that is normally only set further below via
+    # init_total_train_steps. The fresh path dodges this because its optimizer is
+    # built lazily, after total_train_steps is known. So for resume, build the
+    # iterator and set total_train_steps up front. (The real epoch_itr is rebuilt
+    # at the resumed epoch below; per-epoch batch count — hence total steps — is
+    # epoch-independent, so epoch=1 here is fine.)
+    resuming = (not loading_pretrained_encoder) and os.path.exists(checkpoint_path)
+    if resuming:
+        warmup_epoch_itr = trainer.get_train_iterator(
+            epoch=1, load_dataset=True, **passthrough_args
+        )
+        trainer.init_total_train_steps(warmup_epoch_itr)
+
     print("checkpoint_utils load_checkpoint B1")
     extra_state = trainer.load_checkpoint(
         checkpoint_path,
@@ -217,7 +245,7 @@ def load_checkpoint(args, trainer, **passthrough_args):
         reset_lr_scheduler,
         optimizer_overrides,
         reset_meters=reset_meters,
-        load_full_np_model=args.load_full_np_model,
+        load_full_np_model=load_full_np_model,
     )
     print("checkpoint_utils load_checkpoint B2")
 
