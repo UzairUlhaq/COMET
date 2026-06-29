@@ -44,9 +44,21 @@ python organ_finetune/step4_train.py --smoke
 # 4b. full fine-tune (loads pretrained encoder, trains LNP encoder + head)
 python organ_finetune/step4_train.py
 
+# 4c. optional sweep across folds/hyperparameters, then copy the best checkpoint
+python organ_finetune/sweep_train.py --wandb --folds 0 1 2 3 4
+
 # 5. inference on the held-out test split (softmax probs + CLS embeddings)
-python organ_finetune/step5_infer.py
+python organ_finetune/step5_infer.py 
+
+# 6. generate embeddings
+python experiments/visualize_embeddings_before_after_organ.py --path save_lnpdb_organ_fold_V1/checkpoint63.pt
 ```
+
+
+# 7. Visualization
+
+python experiments/visualize_embeddings_before_after_organ.py --path save_lnpdb_organ_fold_V1/checkpoint_last.pt --task-name processed_data_dirs/lnpdb_organ_gen/fold_V1 --valid-subset test,train,valid --batch-size 16 --umap-out-prefix ./infer_results/organ_embeddings_temp/all_data
+
 
 ## Files
 | File | What it does |
@@ -55,8 +67,34 @@ python organ_finetune/step5_infer.py
 | `step2_build_json.py` | Clean CSV → `LNPDB_organ.json` (one sample per formulation, `labels = {"organ": [9 probs]}`) + the task schema. |
 | `step3_build_lmdb.py` | Wraps `experiments/preprocess_data_LNPDB.py` to build the conformer/fold LMDBs. |
 | `step4_train.py` | Fine-tune launcher (`--smoke` for a 1-epoch test). |
+| `sweep_train.py` | Paper-style fold/hyperparameter sweep; writes a manifest and copies the current best checkpoint. |
 | `step5_infer.py` | Inference launcher. |
 | `../unimol/losses/np_finetune_soft_cross_entropy.py` | The soft-target loss (added to the framework; auto-registered). |
+
+## Hyperparameter sweep
+Run a small paper-style grid search:
+
+```bash
+python organ_finetune/sweep_train.py \
+  --name lr_bs_search \
+  --folds 0 1 2 3 4 \
+  --lr 3e-5 1e-4 3e-4 \
+  --batch-size 4 8 \
+  --dropout 0.1 \
+  --seed 1 \
+  --clean \
+  --skip-existing \
+  --wandb
+```
+
+The sweep writes:
+- `organ_finetune/sweeps/<name>/manifest.json`
+- `organ_finetune/sweeps/<name>/best_model.json`
+- `organ_finetune/sweeps/<name>/best_model/checkpoint_best.pt`
+
+By default, "best" means highest `test_top1_accuracy` from the post-training
+test inference. Override with `--best-metric <metric>` or use
+`--minimize-best-metric` for metrics where lower is better.
 
 ## How the label works (why softmax, not 9 sigmoids)
 The same formulation is measured across several organs (biodistribution panels),

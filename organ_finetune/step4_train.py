@@ -27,7 +27,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 EXPERIMENTS = REPO_ROOT / "experiments"
 
 # ---- config -----------------------------------------------------------------
-FOLD = 0
+FOLD = 1
 TASK_NAME = f"processed_data_dirs/lnpdb_organ_gen/fold_V{FOLD}"
 SCHEMA = "task_schemas/lnpdb_organ_schema.json"
 HEAD_NAME = "organ"
@@ -40,7 +40,7 @@ LR = 1e-4
 BATCH_SIZE = 8
 WARMUP = 0.06
 DROPOUT = 0.1
-EPOCHS = 30
+EPOCHS = 100
 CONF_SIZE = 11
 ONLY_POLAR = 0
 SEED = 1
@@ -48,10 +48,10 @@ METRIC = "valid_top1_acc"
 
 LNP_LAYERS, LNP_EMBED, LNP_FFN, LNP_HEADS = 8, 256, 256, 8
 
-SAVE_DIR = "./save_lnpdb_organ"
-TMP_SAVE_DIR = "./tmp_save_lnpdb_organ"
-LOG_DIR = "./logs/tmp/log_lnpdb_organ"
-
+SAVE_DIR = f"./save_lnpdb_organ_fold_V{FOLD}"
+TMP_SAVE_DIR = f"./tmp_save_lnpdb_organ_fold_V{FOLD}"
+LOG_DIR = f"./logs/tmp/log_lnpdb_organ_fold_V{FOLD}"
+EMBED_RESULTS_PATH = "./infer_results/organ_embeddings"
 
 def build_cmd(max_epoch):
     return (
@@ -103,13 +103,24 @@ def build_wandb_env(args):
         env["WANDB_ENTITY"] = args.wandb_entity
     if args.wandb_offline:
         env["WANDB_MODE"] = "offline"
+    if not args.no_wandb_embedding_images:
+        env["COMET_WANDB_EMBEDDING_IMAGES"] = "1"
+        env["COMET_WANDB_EMBEDDING_INTERVAL"] = str(args.embedding_interval)
+        env["COMET_WANDB_EMBEDDING_SUBSETS"] = args.embedding_subsets
+        env["COMET_WANDB_EMBEDDING_OUT_DIR"] = EMBED_RESULTS_PATH
+        env["COMET_WANDB_EMBEDDING_COLOR_BY"] = args.embedding_color_by
+        env["COMET_WANDB_EMBEDDING_CLASSES"] = ",".join([
+            "lung_epithelium", "liver", "muscle", "spleen", "bone_marrow",
+            "heart", "lung", "kidney", "ear",
+        ])
+        if args.embedding_single_organ_only:
+            env["COMET_WANDB_EMBEDDING_SINGLE_ORGAN_ONLY"] = "1"
     try:
         import wandb  # noqa: F401
     except ImportError:
         print("[step4] WARNING: --wandb set but the 'wandb' package is not "
               "installed; W&B logging will be skipped. Install with: pip install wandb")
     return env
-
 
 def main():
     ap = argparse.ArgumentParser()
@@ -128,14 +139,31 @@ def main():
                     help="W&B entity (team/user). Defaults to your wandb login.")
     ap.add_argument("--wandb-offline", action="store_true",
                     help="Run W&B in offline mode (sync later with `wandb sync`).")
+    ap.add_argument("--no-wandb-embedding-images", action="store_true",
+                    help="With --wandb, skip post-epoch embedding UMAP image uploads.")
+    ap.add_argument("--embedding-interval", type=int, default=1,
+                    help="Upload an embedding image every N epochs when --wandb is set.")
+    ap.add_argument("--embedding-subsets", default="valid",
+                    help="Comma-separated splits to visualize after each epoch.")
+    ap.add_argument("--embedding-color-by", choices=["target", "pred"], default="target",
+                    help="Color post-epoch embedding points by target or prediction.")
+    ap.add_argument("--embedding-single-organ-only", action="store_true",
+                    help="Drop multi-organ soft-label samples from post-epoch plots.")
     args = ap.parse_args()
 
     max_epoch = 1 if args.smoke else EPOCHS
-    cmd = build_cmd(max_epoch)
+    if args.embedding_interval < 1:
+        ap.error("--embedding-interval must be >= 1")
     env = build_wandb_env(args) if args.wandb else None
     if env is not None:
         print(f"[step4] W&B logging ON -> project={env['WANDB_PROJECT']} "
               f"run={env['COMET_WANDB_RUN_NAME']} id={env['COMET_WANDB_RUN_ID']}")
+        if not args.no_wandb_embedding_images:
+            print("[step4] W&B embedding images ON -> "
+                  f"every {args.embedding_interval} epoch(s), "
+                  f"subsets={args.embedding_subsets}")
+
+    cmd = build_cmd(max_epoch)
     print(f"[step4] cwd={EXPERIMENTS}\n[step4] {cmd}\n")
     result = subprocess.run(cmd, shell=True, cwd=EXPERIMENTS, env=env)
     sys.exit(result.returncode)

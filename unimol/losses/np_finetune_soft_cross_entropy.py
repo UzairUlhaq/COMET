@@ -107,7 +107,13 @@ class NPFinetuneSoftCrossEntropyLoss(CrossEntropyLoss):
                 "loss", loss_sum / sample_size / math.log(2), sample_size, round=3
             )
 
-        if "valid" in split or "test" in split or infer:
+        has_eval_outputs = any(
+            any(key.startswith("cls_") for key in log)
+            or log.get("prob") is not None
+            or log.get("target") is not None
+            for log in logging_outputs
+        )
+        if "valid" in split or "test" in split or infer or has_eval_outputs:
             # compile any CLS representations emitted with --output-cls-rep
             for key in logging_outputs[0]:
                 if "cls_" in key:

@@ -23,7 +23,6 @@ KFOLD_VALID = 5
 TEST_RATIO = 0.2
 NTHREADS = 8
 
-
 def main():
     cmd = (
         f"{sys.executable} preprocess_data_LNPDB.py "
@@ -39,6 +38,6 @@ def main():
         sys.exit(result.returncode)
     print(f"\n[step3] LMDB folds written under experiments/{OUT_DIR}/fold_V0 ... fold_V{KFOLD_VALID-1}")
 
-
 if __name__ == "__main__":
     main()
+

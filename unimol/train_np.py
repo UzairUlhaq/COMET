@@ -11,6 +11,7 @@ import logging
 import math
 import os
 import sys
+from pathlib import Path
 from typing import Dict, Optional, Any, List, Tuple, Callable
 
 import numpy as np
@@ -46,6 +47,177 @@ logging.basicConfig(
     stream=sys.stdout,
 )
 logger = logging.getLogger("unicore_cli.train")
+
+
+def _env_truthy(name: str) -> bool:
+    return os.environ.get(name, "").lower() in {"1", "true", "yes", "on"}
+
+
+def _embedding_interval() -> int:
+    try:
+        return max(1, int(os.environ.get("COMET_WANDB_EMBEDDING_INTERVAL", "1")))
+    except ValueError:
+        return 1
+
+
+def _embedding_classes() -> List[str]:
+    classes = os.environ.get("COMET_WANDB_EMBEDDING_CLASSES", "")
+    return [c.strip() for c in classes.split(",") if c.strip()]
+
+
+def _reduce_embeddings_to_2d(emb: np.ndarray, seed: int) -> Tuple[np.ndarray, str]:
+    try:
+        import umap
+
+        coords = umap.UMAP(
+            n_neighbors=min(15, max(2, emb.shape[0] - 1)),
+            min_dist=0.1,
+            n_components=2,
+            random_state=seed,
+            metric="euclidean",
+        ).fit_transform(emb)
+        return coords, "UMAP"
+    except ImportError:
+        x = emb - emb.mean(axis=0, keepdims=True)
+        _, _, vt = np.linalg.svd(x, full_matrices=False)
+        coords = x @ vt[:2].T
+        return coords, "PCA"
+
+
+def _write_embedding_plot(coords, labels, label_names, method, png_path):
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
+    fig, ax = plt.subplots(figsize=(9, 7))
+    cmap = plt.get_cmap("tab10")
+    present = sorted(set(labels.tolist()))
+    for color_i, label_i in enumerate(present):
+        mask = labels == label_i
+        name = label_names[label_i] if label_i < len(label_names) else f"class_{label_i}"
+        ax.scatter(
+            coords[mask, 0], coords[mask, 1],
+            s=18, alpha=0.7, color=cmap(color_i % 10),
+            label=f"{name} (n={int(mask.sum())})", edgecolors="none",
+        )
+    ax.set_title(f"{method} of validation LNP embeddings")
+    ax.set_xlabel(f"{method}-1")
+    ax.set_ylabel(f"{method}-2")
+    ax.legend(loc="best", fontsize=8, framealpha=0.9)
+    fig.tight_layout()
+    fig.savefig(png_path, dpi=200)
+    plt.close(fig)
+
+
+def maybe_log_embedding_image(args, trainer, task, epoch_itr, valid_subsets):
+    if not _env_truthy("COMET_WANDB_EMBEDDING_IMAGES"):
+        return
+    if not distributed_utils.is_master(args):
+        return
+    if epoch_itr.epoch % _embedding_interval() != 0:
+        return
+
+    wb_run = progress_bar._get_wandb_run()
+    if wb_run is None:
+        return
+
+    requested = os.environ.get("COMET_WANDB_EMBEDDING_SUBSETS")
+    subsets = [s.strip() for s in requested.split(",") if s.strip()] if requested else valid_subsets
+    color_by = os.environ.get("COMET_WANDB_EMBEDDING_COLOR_BY", "target")
+    single_organ_only = _env_truthy("COMET_WANDB_EMBEDDING_SINGLE_ORGAN_ONLY")
+    out_dir = Path(os.environ.get("COMET_WANDB_EMBEDDING_OUT_DIR", "infer_results/organ_embeddings"))
+    out_dir.mkdir(parents=True, exist_ok=True)
+    class_names = _embedding_classes()
+
+    model = trainer.get_model()
+    was_training = model.training
+    model.eval()
+    log_outputs = []
+    with torch.no_grad():
+        for subset in subsets:
+            itr = trainer.get_valid_iterator(subset).next_epoch_itr(
+                shuffle=False, set_dataset_epoch=False
+            )
+            for sample in itr:
+                sample, is_dummy_batch = trainer._prepare_sample(sample)
+                if is_dummy_batch:
+                    continue
+                _, _, logging_output = task.valid_step(
+                    sample,
+                    model,
+                    trainer.get_loss(),
+                    test=True,
+                    infer=False,
+                    output_cls_rep=True,
+                )
+                log_outputs.append(logging_output)
+    if was_training:
+        model.train()
+
+    if not log_outputs:
+        logger.warning("W&B embedding image skipped: no validation samples found")
+        return
+
+    cls_key = next((k for k in log_outputs[0] if k.startswith("cls_")), None)
+    if cls_key is None:
+        logger.warning("W&B embedding image skipped: validation loss did not emit cls_* reps")
+        return
+
+    emb = torch.cat([log[cls_key] for log in log_outputs], dim=0).float().cpu().numpy()
+    target = torch.cat([log["target"] for log in log_outputs], dim=0).float().cpu().numpy()
+    prob = torch.cat([log["prob"] for log in log_outputs], dim=0).float().cpu().numpy()
+    ids = []
+    for log in log_outputs:
+        ids.extend(log.get("lnp_ids", []))
+
+    if single_organ_only:
+        keep = (target > 0).sum(axis=1) == 1
+        emb, target, prob = emb[keep], target[keep], prob[keep]
+        ids = [sample_id for sample_id, keep_i in zip(ids, keep) if keep_i]
+
+    if emb.shape[0] < 3:
+        logger.warning("W&B embedding image skipped: need at least 3 samples")
+        return
+
+    scores = prob if color_by == "pred" else target
+    labels = scores.argmax(axis=1)
+    coords, method = _reduce_embeddings_to_2d(emb, args.seed)
+
+    epoch = epoch_itr.epoch
+    updates = trainer.get_num_updates()
+    stem = f"embedding_epoch{epoch:03d}_updates{updates}"
+    png_path = out_dir / f"{stem}.png"
+    csv_path = out_dir / f"{stem}.csv"
+    _write_embedding_plot(coords, labels, class_names, method, png_path)
+
+    with csv_path.open("w") as f:
+        f.write(f"lnp_id,{method.lower()}_1,{method.lower()}_2,label\n")
+        for sample_id, (x, y), label in zip(ids, coords, labels):
+            name = class_names[label] if label < len(class_names) else f"class_{label}"
+            f.write(f"{sample_id},{x:.6f},{y:.6f},{name}\n")
+
+    try:
+        import wandb
+    except ImportError:
+        logger.warning("wandb not found; embedding image saved locally at %s", png_path)
+        return
+
+    wb_run.log({
+        "embedding_epoch": epoch,
+        "organ_embedding_umap": wandb.Image(
+            str(png_path),
+            caption=f"epoch={epoch}, updates={updates}, subsets={','.join(subsets)}",
+        ),
+    }, step=updates)
+
+    artifact = wandb.Artifact(
+        f"organ-embedding-epoch-{epoch:03d}-updates-{updates}",
+        type="embedding-visualization",
+    )
+    artifact.add_file(str(png_path))
+    artifact.add_file(str(csv_path))
+    wb_run.log_artifact(artifact)
+    logger.info("logged W&B embedding image: %s", png_path)
 
 
 def main(args) -> None:
@@ -439,6 +611,10 @@ def validate_and_save(
             valid_losses, metrics_that_drop_datasets = validate(args, trainer, task, epoch_itr, valid_subsets, metrics_to_dropped_datasets)
         else:
             valid_losses = validate(args, trainer, task, epoch_itr, valid_subsets)
+        try:
+            maybe_log_embedding_image(args, trainer, task, epoch_itr, valid_subsets)
+        except Exception:
+            logger.exception("failed to log W&B embedding image")
 
     should_stop |= should_stop_early(args, valid_losses[0])
 

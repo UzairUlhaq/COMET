@@ -87,16 +87,27 @@ def _formulation_key(row):
 
 def _build_components(row):
     """Component dicts for one formulation, skipping components whose SMILES is
-    absent (so 3-component LNPs without HL or PEG are handled gracefully)."""
-    components = []
+    absent (so 3-component LNPs without HL or PEG are handled gracefully).
+
+    Mol ratios are normalized over present components so they sum to 1.0 in the
+    emitted JSON.
+    """
+    raw_components = []
     for comp_type, (smiles_col, mol_col) in COMPONENTS.items():
         if pd.notna(row[smiles_col]):
-            components.append({
+            raw_components.append({
                 "smi": row[smiles_col],
                 "component_type": comp_type,
                 "mol": float(row[mol_col]) if pd.notna(row[mol_col]) else 0.0,
             })
-    return components
+
+    total_mol = sum(component["mol"] for component in raw_components)
+    if total_mol <= 0:
+        return raw_components
+
+    for component in raw_components:
+        component["mol"] = component["mol"] / total_mol
+    return raw_components
 
 
 def _organ_distribution(measured_organs):

@@ -7,7 +7,6 @@ import torch.nn.functional as F
 from unimol.core import metrics
 from unimol.core.losses import UnicoreLoss, register_loss
 
-
 @register_loss("unimol")
 class UniMolLoss(UnicoreLoss):
     def __init__(self, task):

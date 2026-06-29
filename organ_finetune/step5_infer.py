@@ -14,7 +14,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[1]
 EXPERIMENTS = REPO_ROOT / "experiments"
 
-FOLD = 0
+FOLD = 1
 TASK_NAME = f"processed_data_dirs/lnpdb_organ_gen/fold_V{FOLD}"
 SCHEMA = "task_schemas/lnpdb_organ_schema.json"
 HEAD_NAME = "organ"
@@ -25,7 +25,7 @@ CONF_SIZE = 11
 ONLY_POLAR = 0
 BATCH_SIZE = 8
 
-WEIGHT_PATH = "./save_lnpdb_organ/checkpoint_best.pt"
+WEIGHT_PATH = f"./save_lnpdb_organ_fold_V{FOLD}/checkpoint_best.pt"
 RESULTS_PATH = "./infer_results/lnpdb_organ"
 
 LNP_LAYERS, LNP_EMBED, LNP_FFN, LNP_HEADS = 8, 256, 256, 8
