@@ -1,5 +1,6 @@
 import torch
 from torch import nn
+from torch.nn import functional as F
 
 
 class SimpleLNPTransformer(nn.Module):
@@ -9,7 +10,7 @@ class SimpleLNPTransformer(nn.Module):
         num_component_types,
         num_classes,
         embed_dim=256,
-        layers=2,
+        layers=16,
         heads=4,
         dropout=0.1,
     ):
@@ -28,6 +29,7 @@ class SimpleLNPTransformer(nn.Module):
             batch_first=True,
             norm_first=True,
         )
+
         self.transformer = nn.TransformerEncoder(encoder_layer, num_layers=layers)
         self.norm = nn.LayerNorm(embed_dim)
         self.head = nn.Linear(embed_dim, num_classes)
@@ -40,7 +42,6 @@ class SimpleLNPTransformer(nn.Module):
             + self.percent_proj(percents.unsqueeze(-1))
             + self.type_embed(component_types)
         )
-
         batch = x.shape[0]
         cls = self.cls.expand(batch, -1, -1)
         x = torch.cat([cls, x], dim=1)
@@ -53,7 +54,12 @@ class SimpleLNPTransformer(nn.Module):
         cls_rep = self.norm(x[:, 0])
         return self.head(cls_rep), cls_rep
 
-
 def soft_cross_entropy(logits, target):
     log_probs = torch.log_softmax(logits, dim=-1)
     return -(target * log_probs).sum(dim=-1).mean()
+
+
+def organ_loss(logits, target, hard_labels=False):
+    if hard_labels:
+        return F.cross_entropy(logits, target.argmax(dim=-1))
+    return soft_cross_entropy(logits, target)
